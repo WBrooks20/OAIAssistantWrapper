@@ -19,11 +19,11 @@ class GPTBot():
     def formatter(self, message: str, speakertype: Type) -> str:
         match speakertype:
             case Type.USER:
-                return f"{colored(datetime.datetime.now(), 'yellow')}: Your message: {colored(message, 'yellow')}"
+                return f"{colored(datetime.datetime.now(), 'yellow')}: {colored("[YOU]",'blue')} {colored(message, 'yellow')}"
             case Type.BOT:
-                return f"{colored(datetime.datetime.now(), 'green')}: Assistant Response: {colored(message, 'green')}"
+                return f"{colored(datetime.datetime.now(), 'green')}: {colored("[ASSISTANT]",'blue')} {colored(message, 'green')}"
             case Type.ERROR:
-                return f"{colored(message, 'red')}"
+                return f"{colored("[ERROR]",'blue')} {colored(message, 'red')}"
 
     def InitOpenai(self):
         try:

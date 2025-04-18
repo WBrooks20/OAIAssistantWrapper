@@ -12,16 +12,19 @@ def main():
     bot = GPTBot(openAI_key, openAI_Assistant_ID)
     bot.InitOpenai()  # Initialize the OpenAI API connection
 
+    print("\n--- Conversation Started ---\n")
+    
     # Start a loop to interact with the bot
     while continue_talking:
         # Get the user's message for the bot
         message = str(input("Your message to GPT: "))
+        print("------------------------------")
 
         # Send the message to the bot and get the response
         response = bot.PromtBot(message)
 
         # Print the bot's response in a formatted way
-        print(f"{response[0]}\n--------------------\n{response[1]}")
+        print(f"{response[0]}\n++++++++++++++++++++++++++++++\n{response[1]}")
 
 if __name__ == "__main__":
     # Entry point of the script
