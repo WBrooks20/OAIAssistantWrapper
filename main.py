@@ -21,7 +21,7 @@ def main():
         print("------------------------------")
 
         # Send the message to the bot and get the response
-        response = bot.PromtBot(message)
+        response = bot.PromptBot(message)
 
         # Print the bot's response in a formatted way
         print(f"{response[0]}\n{response[1]}\n++++++++++++++++++++++++++++++")

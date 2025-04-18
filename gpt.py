@@ -16,7 +16,7 @@ class GPTBot():
         self.thread = None
         self.thread_id = None
 
-    def formatter(self, message: str, speakertype: Type) -> str:
+    def Formatter(self, message: str, speakertype: Type) -> str:
         match speakertype:
             case Type.USER:
                 return f"{colored(datetime.datetime.now(), 'yellow')}: {colored("[YOU]",'blue')} {colored(message, 'yellow')}"
@@ -31,10 +31,10 @@ class GPTBot():
             self.thread = self.client.beta.threads.create()
             self.thread_id = self.thread.id
         except Exception as e:
-            print(self.formatter(f"Failed to initialize OpenAI client: {str(e)}", Type.ERROR))
+            print(self.Formatter(f"Failed to initialize OpenAI client: {str(e)}", Type.ERROR))
             raise
 
-    def PromtBot(self, message: str) -> str:
+    def PromptBot(self, message: str) -> str:
         try:
             # Send the user's message to the assistant
             user_message = self.client.beta.threads.messages.create(
@@ -43,7 +43,7 @@ class GPTBot():
                 content=message
             )
         except Exception as e:
-            return self.formatter(f"Failed to send message to assistant: {str(e)}", Type.ERROR), ""
+            return self.Formatter(f"Failed to send message to assistant: {str(e)}", Type.ERROR), ""
 
         try:
             # Start and poll the assistant's response
@@ -52,7 +52,7 @@ class GPTBot():
                 assistant_id=self.assist_ID
             )
         except Exception as e:
-            return self.formatter(f"Failed to process assistant response: {str(e)}", Type.ERROR), ""
+            return self.Formatter(f"Failed to process assistant response: {str(e)}", Type.ERROR), ""
 
         if run.status == 'completed':
             try:
@@ -64,9 +64,9 @@ class GPTBot():
                 )
                 assistant_response = thread_messages.data[0].content[0].text.value
             except Exception as e:
-                return self.formatter(f"Failed to retrieve assistant response: {str(e)}", Type.ERROR), ""
+                return self.Formatter(f"Failed to retrieve assistant response: {str(e)}", Type.ERROR), ""
         else:
-            return self.formatter("Assistant response not completed successfully.", Type.ERROR), ""
+            return self.Formatter("Assistant response not completed successfully.", Type.ERROR), ""
 
         # Format and return the user message and assistant response
-        return self.formatter(message, Type.USER), self.formatter(assistant_response, Type.BOT)
+        return self.Formatter(message, Type.USER), self.Formatter(assistant_response, Type.BOT)
