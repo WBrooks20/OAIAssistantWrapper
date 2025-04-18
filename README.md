@@ -23,8 +23,11 @@ OAIAssistantWrapper is a simple Python package that allows you to interact with 
 ## Usage
 
 1. Run the main.py script:
-2. Enter your OpenAI API key and Assistant ID when prompted.
-3. Start interacting with the assistant by typing your messages.
+```
+python3 main.py
+```
+3. Enter your OpenAI API key and Assistant ID when prompted.
+4. Start interacting with the assistant by typing your messages.
 
 ## Example
 ```
