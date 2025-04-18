@@ -16,7 +16,9 @@ OAIAssistantWrapper is a simple Python package that allows you to interact with 
    git clone https://github.com/wbrooks20/OAIAssistantWrapper.git
    cd OAIAssistantWrapper
 2. Install the required dependencies:
+   ```
     pip install -r requirements.txt
+   ```
 
 ## Usage
 
