@@ -2,6 +2,9 @@
 
 OAIAssistantWrapper is a simple Python package that allows you to interact with an OpenAI assistant in a single thread. It provides a streamlined interface for sending messages to the assistant and receiving responses.
 
+![image](https://github.com/user-attachments/assets/413ed359-f8be-4903-be1e-358ef8658d98)
+
+
 ## Features
 
 - Easy-to-use interface for interacting with OpenAI's API.
