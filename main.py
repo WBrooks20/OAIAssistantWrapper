@@ -13,7 +13,7 @@ def main():
     bot.InitOpenai()  # Initialize the OpenAI API connection
 
     print("\n--- Conversation Started ---\n")
-    
+
     # Start a loop to interact with the bot
     while continue_talking:
         # Get the user's message for the bot
@@ -24,7 +24,7 @@ def main():
         response = bot.PromtBot(message)
 
         # Print the bot's response in a formatted way
-        print(f"{response[0]}\n++++++++++++++++++++++++++++++\n{response[1]}")
+        print(f"{response[0]}\n{response[1]}\n++++++++++++++++++++++++++++++")
 
 if __name__ == "__main__":
     # Entry point of the script
