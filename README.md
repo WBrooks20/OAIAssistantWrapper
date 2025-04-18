@@ -27,16 +27,16 @@ OAIAssistantWrapper is a simple Python package that allows you to interact with 
 3. Start interacting with the assistant by typing your messages.
 
 ## Example
-
+```
 Insert OpenAI Key: <your-api-key>
 Insert OpenAI Assistant ID: <your-assistant-id>
 Your message to GPT: Hello!
 2025-01-01 12:00:00: Your message: Hello!
 --------------------
 2025-01-01 12:00:01: Assistant: Hi there! How can I assist you today?
-
+```
 ## Project Structure
-
+```
 OAIAssistantWrapper/
 ├── [gpt.py]                                          # Core logic for interacting with OpenAI API
 ├── [main.py]                                         # Entry point for the application
@@ -44,7 +44,7 @@ OAIAssistantWrapper/
 ├── [README.md]                                       # Project documentation
 ├── LICENSE            # License information
 └── .gitignore         # Git ignore rules
-
+```
 ## Requirements
 
 - Python 3.10 or higher
