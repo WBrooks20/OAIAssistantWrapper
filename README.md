@@ -1,18 +1,18 @@
-# OAIAssistantWrapper
+# OAIAssistantWrapper 🚀
 
 OAIAssistantWrapper is a simple Python package that allows you to interact with an OpenAI assistant in a single thread. It provides a streamlined interface for sending messages to the assistant and receiving responses.
 
 ![image](https://github.com/user-attachments/assets/413ed359-f8be-4903-be1e-358ef8658d98)
 
 
-## Features
+## Features ✨
 
 - Easy-to-use interface for interacting with OpenAI's API.
 - Supports single-threaded conversations.
 - Provides formatted output for user and bot messages.
 - Built-in error handling for API interactions.
 
-## Installation
+## Installation 🛠️
 
 1. Clone the repository:
    ```bash
@@ -23,7 +23,7 @@ OAIAssistantWrapper is a simple Python package that allows you to interact with 
     pip install -r requirements.txt
    ```
 
-## Usage
+## Usage 💻
 
 1. Run the main.py script:
 ```
@@ -32,7 +32,7 @@ python3 main.py
 3. Enter your OpenAI API key and Assistant ID when prompted.
 4. Start interacting with the assistant by typing your messages.
 
-## Example
+## Example 📝
 ```
 Insert OpenAI Key: <your-api-key>
 Insert OpenAI Assistant ID: <your-assistant-id>
@@ -41,7 +41,7 @@ Your message to GPT: Hello!
 --------------------
 2025-01-01 12:00:01: Assistant: Hi there! How can I assist you today?
 ```
-## Project Structure
+## Project Structure 📂
 ```
 OAIAssistantWrapper/
 ├── [gpt.py]                                          # Core logic for interacting with OpenAI API
@@ -51,13 +51,13 @@ OAIAssistantWrapper/
 ├── LICENSE            # License information
 └── .gitignore         # Git ignore rules
 ```
-## Requirements
+## Requirements 📋
 
-- Python 3.10 or higher
-- OpenAI API key
-- OpenAI Assistant ID
+- 🐍 Python 3.10 or higher
+- 🔑 OpenAI API key
+- 🆔 OpenAI Assistant ID
 
-## Dependencies
+## Dependencies 📦
 The project uses the following Python libraries:
 
 - openai
@@ -66,13 +66,13 @@ The project uses the following Python libraries:
 - pydantic
 - And others listed in requirements.txt.
 
-## Contributing
+## Contributing 🤝
 Contributions are welcome! Feel free to open an issue or submit a pull request.
 
-## License
+## License 📜
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-## Acknowledgments
+## Acknowledgments 🙌
 
-- OpenAI for their API.
-- The Python community for the amazing libraries used in this project.
+- 🌟 OpenAI for their API.
+- 🐍 The Python community for the amazing libraries used in this project.
